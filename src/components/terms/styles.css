@@ -1,0 +1,79 @@
+.document_container {
+  display: flex;
+  flex-direction: column;
+  color: rgb(66, 66, 66);
+  background-color: white;
+  line-height: 2rem;
+  padding: 0 6rem;
+  margin-bottom: 4rem;
+}
+
+.document_header {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin: 5rem;
+  text-align: center;
+}
+
+.document_subheader {
+  height: 2em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem;
+  text-align: center;
+}
+
+.document_paragraph {
+  font-family: Arial, sans-serif;
+  margin: 0em 10em;
+  font-size: 1.2rem;
+}
+
+.document_italics {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.document_bold {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .document_container {
+    padding: 0;
+  }
+
+  .document_header {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 3rem;
+    text-align: center;
+  }
+
+  .document_subheader {
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .document_paragraph {
+    font-family: Arial, sans-serif;
+    margin: 0 2.5rem;
+    font-size: 1rem;
+  }
+
+  .document_italics {
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .document_bold {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

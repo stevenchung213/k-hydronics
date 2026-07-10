@@ -1,0 +1,21 @@
+#not_found_container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  padding: 1rem;
+  align-items: center;
+  width: 100%;
+  padding-top: 4rem;
+}
+
+#not_found_container h1 {
+  margin-top: 2rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+#not_found_container div {
+  font-size: 1.2rem;
+  padding: 1rem;
+  padding-top: 1rem;
+}

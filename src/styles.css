@@ -1,0 +1,210 @@
+/* ==========================================================================
+   1. DESIGN TOKENS & THEMING (Native CSS Variables)
+   ========================================================================== */
+:root {
+  /* System Fonts */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Roboto Mono, Menlo, Monaco, Consolas, monospace;
+
+  /* Color Palette (Light Theme Default) */
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #0070f3;
+  --primary-hover: #0051cb;
+  --muted: #888888;
+  --border: #eaeaea;
+
+  /* Layout Tokens */
+  --max-width: 1200px;
+  --radius: 8px;
+
+  /* Typography Scale (Rem-based) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+}
+
+/* Automatic Dark Mode using modern light-dark() or media query */
+@media (prefers-color-scheme: dark) {
+  /* :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #38bdf8;
+    --primary-hover: #0ea5e9;
+    --muted: #a3a3a3;
+    --border: #262626;
+  } */
+}
+
+/* ==========================================================================
+   2. MODERN CSS RESET (Josh Comeau & Piccalilli Inspired)
+   ========================================================================== */
+@layer reset {
+
+  /* Box-sizing rules and padding/margin clearing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Prevent font size inflation and set up smooth scrolling */
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    scroll-behavior: smooth;
+  }
+
+  /* Core body defaults using dynamic viewport height (dvh) */
+  body {
+    min-block-size: 100dvh;
+    /* Logical property for height */
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Make images and media easier to work with */
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-inline-size: 100%;
+    /* Logical property for max-width */
+    block-size: auto;
+  }
+
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+  }
+
+  /* Remove list styles on tracking components where appropriate */
+  ol,
+  ul {
+    list-style: none;
+  }
+
+  /* Standard anchor style reset */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Interactive pointer hints */
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+}
+
+/* ==========================================================================
+   3. GLOBAL BASE STYLES & TYPOGRAPHY
+   ========================================================================== */
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--foreground);
+    text-wrap: balance;
+    /* Prevents single-word line wraps */
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+  }
+
+  p {
+    text-wrap: pretty;
+    /* Eliminates typographical orphans */
+    color: var(--foreground);
+    /* max-inline-size: 100ch; */
+    /* Limits reading length for better accessibility */
+  }
+
+  code,
+  pre {
+    font-family: var(--font-mono);
+  }
+}
+
+/* ==========================================================================
+   4. UTILITY LAYOUT CLASSES
+   ========================================================================== */
+@layer utilities {
+
+  /* Global Page Layout Container */
+  .container {
+    max-inline-size: var(--max-width);
+    margin-inline: auto;
+    /* Centers the container logically */
+    padding-inline: 1.5rem;
+  }
+
+  /* Centering flex shortcut */
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Screen-reader only class for accessibility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+#app_container {
+  padding-top: 5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  #app_container {
+    padding-top: 4rem;
+  }
+}
