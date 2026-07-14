@@ -4,12 +4,18 @@
   margin-bottom: 5rem;
 }
 
+.button_container {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
 .expand_button {
-  border-radius: 1rem;
+  border-radius: 2rem;
   color: rgb(71, 65, 56);
-  width: 7rem;
-  height: 2.5rem;
-  border: 1px solid rgb(71, 65, 56);
+  width: 15rem;
+  height: 2.6rem;
+  border: 1px solid rgb(121, 120, 119);
+  margin: auto;
 }
 
 .column_feature {
@@ -31,18 +37,22 @@
   width: 2.1rem;
 }
 
+.check_mark {
+  width: 2.1rem;
+}
+
 .expanded_row {
   height: 4.5rem;
-  line-height: 2rem;
+  line-height: 1.7rem;
   display: flex;
   align-items: center;
   padding: 0 3rem;
 }
 
 .expanded_row p {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: 350;
   padding: 0 1rem;
-  min-width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -55,12 +65,12 @@
 
   .expand_button {
     font-size: 0.9rem;
-    width: 5rem;
-    height: 1.8rem;
+    width: 10rem;
+    height: 2rem;
   }
 
   .column_feature {
-    height: 4rem;
+    height: 4.5rem;
     font-size: 0.95rem;
   }
 

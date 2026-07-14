@@ -8,14 +8,16 @@ const Consultation = () => {
   return (
     <div id='consultation_container'>
       <h2 id='consultation_banner' className='banner'>
-        REQUEST A FREE QUOTE
+        Interested?
       </h2>
       <div className='consultation_section'>
         <img src={quote1} alt='consultation' className='consultation_image' />
         <div className='consultation_info'>
-          Experience the difference with our free in-home consultation!
+          Give us a call at (213) 649-6071 and we can provide an estimate over the phone
           <br />
-          Our local expert will visit your home to provide personalized advice and tailored solutions for your window treatment needs.
+          or
+          <br />
+          click the button below if you prefer electronic communication!
         </div>
       </div>
       <NavLink

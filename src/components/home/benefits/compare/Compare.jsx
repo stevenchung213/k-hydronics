@@ -27,7 +27,7 @@ const Compare = () => {
     },
     {
       feature: 'Increased Property Value',
-      text: 'Homes with hydronic floor heating are becoming increasingly popular, particularly for high-end luxury and energy-conscious buyers. Homeowners can expect to recoup 50–80% of installation costs at the time of sale.'
+      text: 'Homes with hydronic floor heating are becoming increasingly popular, particularly for high-end luxury and energy-conscious buyers. You can expect to recoup up to 80% of installation costs at the time of sale.'
     },
   ];
 
@@ -68,18 +68,20 @@ const Compare = () => {
 
   return (
     <>
-      <button
-        onClick={() => setAllExpanded(v => !v)}
-        className='expand_button'
-      >
-        {allExpanded ? 'Collapse all' : 'Expand all'}
-      </button>
+      <div className='button_container'>
+        <button
+          onClick={() => setAllExpanded(v => !v)}
+          className='expand_button'
+        >
+          {allExpanded ? 'Collapse all' : 'Expand all'}
+        </button>
+      </div>
       <DataTable
         columns={columns}
         data={data}
         animateRows
         expandableRows
-        expandableRowsHideExpander
+        // expandableRowsHideExpander
         expandableRowsComponent={ExpandedRow}
         expandableRowExpanded={row => allExpanded}
       />

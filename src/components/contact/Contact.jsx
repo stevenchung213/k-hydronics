@@ -1,17 +1,14 @@
-import React from 'react';
-import { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { NavLink } from 'react-router';
 import PhoneInput from 'react-phone-number-input/input'
 import { isValidPhoneNumber } from 'react-phone-number-input';
 import emailjs from "@emailjs/browser";
-// import ReactGA from 'react-ga4';
-// import quote from './../assets/images/contact_image.webp';
 import './styles.css';
 
 const Contact = () => {
 
   useEffect(() => {
-    const emailJSPublicKey = import.meta.env.EMAILJS_PUBLIC_KEY;
+    const emailJSPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     emailjs.init(emailJSPublicKey);
 
@@ -34,8 +31,8 @@ const Contact = () => {
 
     if (phoneRef.current.value[0] !== '(') return alert('please input a valid phone number');
 
-    const serviceId = import.meta.env.EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.EMAILJS_TEMPLATE_KEY;
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
     try {
       setLoading(true);
@@ -87,9 +84,9 @@ const Contact = () => {
             <div className="form_group">
               <label className='form_label'>Location:</label>
               <select className='form_select_input' ref={locationRef} required >
-                <option className='select_option' value="nocal">Northern California</option>
-                <option className='select_option' value="socal">Southern California</option>
-                <option className='select_option' value="centcal">Central California</option>
+                <option className='select_option' value="north_cal">Northern California</option>
+                <option className='select_option' value="soouth_cal">Southern California</option>
+                <option className='select_option' value="central_cal">Central California</option>
                 <option className='select_option' value="portland">Portland</option>
                 <option className='select_option' value="seattle">Seattle</option>
               </select>
@@ -128,7 +125,7 @@ const Contact = () => {
         </section>
       </div>
       <div id='contact_message' className='contact_subheader'>
-        One of our experts will contact you as soon as possible!
+        One of our representatives will contact you as soon as possible!
         <br />
         <span className='contact_subheader'>
           Feel free to check out our&nbsp;
@@ -138,7 +135,7 @@ const Contact = () => {
           >
             FAQ
           </NavLink>
-          &nbsp;section for details regarding your in-home visit.
+          &nbsp;section for any questions in the meantime.
         </span>
       </div>
     </div>

@@ -4,13 +4,12 @@
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 6rem;
-  /* background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 234, 206) 30%, rgb(230, 201, 164) 50%, rgb(255, 234, 206) 70%, rgb(255, 255, 255) 100%); */
 }
 
 #consultation_banner {
   color: rgb(71, 65, 56);
-  font-family: Lato, sans-serif;
-  font-weight: 400;
+  /* font-family: Lato, sans-serif; */
+  font-weight: 300;
 }
 
 .consultation_section {
@@ -29,7 +28,7 @@
   margin: auto;
   font-size: 1.2rem;
   text-align: center;
-  padding: 2rem 9rem;
+  padding: 2rem 16rem;
   color: rgb(71, 65, 56);
   line-height: 2rem;
 }
@@ -42,9 +41,12 @@
   height: 3.5rem;
   width: 12rem;
   border-radius: 30px;
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(255, 255, 255);
   margin: auto;
   transition: 0.3s ease-in-out;
+  border: 1px solid rgb(107, 107, 107);
+  color: rgb(75, 75, 75);
+  font-weight: 370;
 }
 
 @keyframes pulse {
@@ -88,6 +90,8 @@
   }
 
   .consultation_info {
+    font-size: 1rem;
+    font-weight: 370;
     padding: 2rem 3rem;
   }
 

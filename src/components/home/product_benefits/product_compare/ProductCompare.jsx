@@ -10,15 +10,19 @@ const Compare = () => {
 
   const data = [
     {
+      feature: 'Made in Korea',
+      text: `Aside from the quality, the South Korean floor heating industry is one of the most advanced in the world; over 90% of their homes have floor heating!`
+    },
+    {
       feature: 'More Efficient',
       text: `Our carbon composite panels heat up quicker and retain that heat longer than our competitors' panels, resulting in lower utility costs.`
     },
     {
       feature: 'Faster Heat Distribution',
-      text: `The patented water flow algorithm utilized by our controllers ensures that your living space is heated as quick as possible, up to 200% faster than competitors without an increase in costs.`
+      text: `The patented water flow algorithm utilized by our controllers ensure that your living space is heated as quickly as possible, up to 200% faster than competitors without incurring any increase in costs.`
     },
     {
-      feature: 'Wet | Dry Construction Compatible',
+      feature: 'Wet | Dry Compatible',
       text: 'Our floor heating panels are compatible with both wet and dry construction.'
     },
     {
@@ -68,12 +72,14 @@ const Compare = () => {
 
   return (
     <>
-      <button
-        onClick={() => setAllExpanded(v => !v)}
-        className='expand_button'
-      >
-        {allExpanded ? 'Collapse all' : 'Expand all'}
-      </button>
+      <div className='button_container'>
+        <button
+          onClick={() => setAllExpanded(v => !v)}
+          className='expand_button'
+        >
+          {allExpanded ? 'Collapse all' : 'Expand all'}
+        </button>
+      </div>
       <DataTable
         columns={columns}
         data={data}

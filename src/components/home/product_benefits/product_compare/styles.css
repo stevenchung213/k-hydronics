@@ -5,38 +5,6 @@
   margin-bottom: 5rem;
 }
 
-.column_feature {
-  height: 4.5rem;
-  display: flex;
-  align-items: center;
-  font-size: 1.35rem;
-  font-weight: 330;
-}
-
-
-.rdt_columnText {
-  font-size: 1.3rem;
-  font-weight: 375;
-}
-
-.check_mark {
-  width: 2.1rem;
-}
-
-.expanded_row {
-  height: 4.5rem;
-  line-height: 2rem;
-  display: flex;
-  align-items: center;
-  padding: 0 3rem;
-}
-
-.expanded_row p {
-  font-size: 1.1rem;
-  padding: 0 1rem;
-  min-width: 100%;
-}
-
 @media only screen and (max-width: 768px) {
 
   #product_compare_container {
@@ -44,44 +12,10 @@
     width: 100%;
     margin-bottom: 5rem;
   }
-
-  .column_feature {
-    height: 4rem;
-    font-size: 0.95rem;
-  }
-
-  .rdt_columnText {
-    font-size: 1rem;
-  }
-
-  .check_mark {
-    width: 1.8rem;
-  }
-
-  .expanded_row {
-    height: auto;
-    line-height: 1.3rem;
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    padding-top: 0.5rem;
-  }
-
-  .expanded_row p {
-    font-size: 0.85rem;
-  }
-
 }
 
 @media only screen and (max-width: 380px) {
 
   #product_compare_container {}
 
-  .column_feature {}
-
-  .rdt_columnText {}
-
-  .expanded_row {}
-
-  .expanded_row p {}
 }

@@ -5,7 +5,9 @@
   width: 100%;
   padding: 0 1rem;
   background: rgb(255, 255, 255);
-  margin: 3rem 0;
+  /* margin: 3rem 0; */
+  margin-bottom: 3rem;
+  border-radius: 2rem;
 }
 
 .benefits_showcase_banner {
@@ -40,12 +42,9 @@
 
   #floor_heating_diagram {
     margin-top: 1rem;
+    width: 85%;
   }
 
-  #product_compare_diagram {
-    margin-top: 1rem;
-    padding-right: 1rem;
-  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -56,5 +55,4 @@
 
   #floor_heating_diagram {}
 
-  #product_compare_diagram {}
 }

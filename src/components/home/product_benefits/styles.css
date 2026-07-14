@@ -1,4 +1,4 @@
-.benefits_showcase_container {
+/* .benefits_showcase_container {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -6,8 +6,8 @@
   padding: 0 1rem;
   background: rgb(255, 255, 255);
   margin: 3rem 0;
-}
-
+} */
+/* 
 .benefits_showcase_banner {
   color: rgb(71, 65, 56);
   margin-top: 1rem;
@@ -17,12 +17,14 @@
   height: auto;
   margin-top: 1.5rem;
   font-weight: 300;
-}
+} */
 
 #product_compare_diagram {
   width: 60%;
   margin: auto;
   padding-right: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
 }
 
 @media only screen and (max-width: 768px) {
