@@ -18,6 +18,8 @@
   margin: auto;
 }
 
+#_r_4_ {}
+
 .column_feature {
   height: 4.5rem;
   display: flex;
@@ -25,8 +27,6 @@
   font-size: 1.2rem;
   font-weight: 330;
 }
-
-.rdt_TableRow {}
 
 .rdt_columnText {
   font-size: 1.3rem;

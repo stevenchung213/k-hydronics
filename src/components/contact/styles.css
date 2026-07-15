@@ -1,10 +1,12 @@
 #contact_container {
   display: flex;
-  flex-direction: column;
   color: rgb(66, 66, 66);
-  line-height: 2rem;
-  align-items: center;
-  padding: 0 5rem;
+  background-image: url('./../../assets/home_office.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55rem;
 }
 
 #contact_banner {
@@ -15,7 +17,7 @@
   display: flex;
   width: 100%;
   margin: auto;
-  margin-bottom: 2rem;
+  opacity: 98%;
 }
 
 .contact_image {
@@ -26,6 +28,7 @@
 }
 
 .form_container {
+  display: flex;
   margin: auto;
   margin-top: 2rem;
   background: rgb(240, 240, 240);
@@ -108,21 +111,35 @@
   background-color: rgb(128, 128, 128);
 }
 
-#contact_message {
+#response_container {
   display: flex;
   flex-direction: column;
+  padding: 5rem;
+  padding-right: 2rem;
   color: rgb(71, 65, 56);
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-weight: 400;
-}
-
-#contact_message span {
   font-size: 1rem;
+  font-weight: 300;
+  /* align-items: center; */
 }
 
+.gratitude_message {
+  font-size: 2.2rem;
+}
 
+.response_message {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.faq_message {
+  font-size: 1.05rem;
+  margin-top: 3rem;
+}
+
+.faq_link {
+  text-decoration: underline;
+}
 
 @media only screen and (max-width: 768px) {
   #contact_container {

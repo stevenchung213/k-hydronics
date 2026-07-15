@@ -122,21 +122,25 @@ const Contact = () => {
               Submit
             </button>
           </form>
+          <div id='response_container'>
+            <div className='gratitude_message'>
+              Thank you for your interest!
+            </div>
+            <div className='response_message'>
+              One of our representatives will contact you as soon as possible!
+            </div>
+            <div className='faq_message'>
+              Feel free to check out our&nbsp;
+              <NavLink
+                to='/faqs'
+                className='faq_link'
+              >
+                FAQ
+              </NavLink>
+              &nbsp;section for any questions in the meantime.
+            </div>
+          </div>
         </section>
-      </div>
-      <div id='contact_message' className='contact_subheader'>
-        One of our representatives will contact you as soon as possible!
-        <br />
-        <span className='contact_subheader'>
-          Feel free to check out our&nbsp;
-          <NavLink
-            to='/faqs'
-            className='contact_subheader'
-          >
-            FAQ
-          </NavLink>
-          &nbsp;section for any questions in the meantime.
-        </span>
       </div>
     </div>
   );

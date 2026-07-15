@@ -9,25 +9,86 @@
 }
 
 .timeline_photo {
-  margin: auto;
-  width: 70%;
+  width: 75%;
   border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.tl_img_even {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.tl_img_odd {
+  margin-right: auto;
+  margin-left: 2rem;
 }
 
 .timeline_text_container {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   align-items: center;
   font-weight: 380;
 }
 
-.timeline_text {
-  font-size: 1rem;
-  text-align: left;
-  line-height: 2.5rem;
-  color: rgb(75, 75, 75);
-  padding: 0 9rem;
+.tl_ctr_even {
+  margin-right: auto
 }
 
-@media only screen and (max-width: 768px) {}
+.tl_ctr_odd {
+  margin-left: auto;
+}
+
+.timeline_text {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2.5rem;
+  color: rgb(75, 75, 75);
+  padding-bottom: 6rem;
+}
+
+.tl_txt_even {
+  padding-right: 4rem;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.tl_txt_odd {
+  padding-right: 2rem;
+  padding-left: 4rem;
+  text-align: right;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .MuiTimeline-root {
+    padding-left: 2rem !important;
+  }
+
+  .MuiTimelineItem-root::before {
+    padding: 0 !important;
+    flex: 0 !important;
+  }
+
+  .timeline_photo {
+    margin: auto;
+    margin-top: 1rem;
+    width: 90%;
+  }
+
+  .timeline_text_container {
+    width: 100%;
+  }
+
+  .timeline_text {
+    font-size: 0.95rem;
+    text-align: left;
+    line-height: 1.35rem;
+    padding-top: 1.35rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  }
+}

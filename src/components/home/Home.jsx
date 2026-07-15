@@ -29,31 +29,18 @@ const Home = ({ isMobile }) => {
         canonicalUrl={`https://www.${companyDomain}.com`}
       />
       <main id='home_container'>
-        <div className='cover_photo' alt='cover_photo'>
-          <h1 className='slogan'>
-            {/* Ancient Tradition Meets New Age Technology */}
-          </h1>
-        </div>
-        <>
-          <h3 className='subheader'>
-            <div>
-              Ancient Tradition Meets Modern Technology
-              {/* <a>Ancient Tradition</a>&nbsp;<p>Meets&nbsp;</p>Modern Technology */}
-            </div>
-          </h3>
-        </>
+        <div className='cover_photo' alt='cover_photo' />
+        <h3 className='subheader'>
+          <div>
+            Ancient Korean Tradition Meets Modern Technology
+          </div>
+        </h3>
         <Suspense fallback={<Loading />}>
-
           <Benefits isMobile={isMobile} />
-
           <Showcase isMobile={isMobile} />
-
           <ProductBenefits isMobile={isMobile} />
-
           <Install isMobile={isMobile} />
-
           <Consultation isMobile={isMobile} />
-
         </Suspense>
       </main>
     </>

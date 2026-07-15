@@ -53,7 +53,7 @@ const NavBar = ({ isMobile }) => {
                       className={({ isActive }) => isActive ? 'navbar_link active' : 'navbar_link'}
                       onClick={() => setShowNav(state => !state)}
                     >
-                      Product
+                      Products
                     </NavLink>
                   </nav>
                   <nav className='navbar_link_container'>
@@ -106,7 +106,7 @@ const NavBar = ({ isMobile }) => {
                   className={({ isActive }) => isActive ? 'navbar_link active' : 'navbar_link'}
                   onClick={() => window.scrollTo(0, 0)}
                 >
-                  Product
+                  Products
                 </NavLink>
               </nav>
               <nav className='navbar_link_container'>
