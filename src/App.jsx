@@ -10,6 +10,7 @@ const Terms = lazy(() => import('./components/terms/Terms'));
 const Faqs = lazy(() => import('./components/faq/Faq'));
 const Contact = lazy(() => import('./components/contact/Contact'));
 const NotFound = lazy(() => import('./components/notfound/NotFound'));
+const UnderConstruction = lazy(() => import('./components/under_construction/UnderConstruction'));
 
 const App = () => {
   const screenSize = useScreenSize();
@@ -24,7 +25,7 @@ const App = () => {
         <Route path='terms_of_use' element={<Terms isMobile={isMobile} />} />
         <Route path='faqs' element={<Faqs isMobile={isMobile} />} />
         <Route path='contact' element={<Contact isMobile={isMobile} />} />
-        <Route path='*' element={<NotFound isMobile={isMobile} />} />
+        <Route path='*' element={<UnderConstruction isMobile={isMobile} />} />
       </Routes>
       <Footer isMobile={isMobile} />
     </section>

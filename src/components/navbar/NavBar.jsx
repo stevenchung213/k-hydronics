@@ -58,11 +58,11 @@ const NavBar = ({ isMobile }) => {
                   </nav>
                   <nav className='navbar_link_container'>
                     <NavLink
-                      to='distributors'
+                      to='builders'
                       className={({ isActive }) => isActive ? 'navbar_link active' : 'navbar_link'}
                       onClick={() => setShowNav(state => !state)}
                     >
-                      Distributors
+                      Builders
                     </NavLink>
                   </nav>
                   <nav className='navbar_link_container'>
@@ -111,10 +111,10 @@ const NavBar = ({ isMobile }) => {
               </nav>
               <nav className='navbar_link_container'>
                 <NavLink
-                  to='distributors'
+                  to='builders'
                   className={({ isActive }) => isActive ? 'navbar_link active' : 'navbar_link'}
                 >
-                  Distributors
+                  Builders
                 </NavLink>
               </nav>
               <nav className='navbar_link_container'>
