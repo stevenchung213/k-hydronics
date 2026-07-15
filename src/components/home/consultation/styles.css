@@ -3,12 +3,13 @@
   flex-direction: column;
   width: 100%;
   margin-top: 1rem;
-  margin-bottom: 6rem;
+  margin-bottom: 7rem;
+  padding-bottom: 3rem;
+  background-color: white;
 }
 
 #consultation_banner {
   color: rgb(71, 65, 56);
-  /* font-family: Lato, sans-serif; */
   font-weight: 300;
 }
 

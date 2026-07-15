@@ -2,7 +2,6 @@ import React, { lazy, Suspense } from 'react';
 import SEO from './../shared/SEO/SEO';
 import Loading from './../shared/Loading/Loading';
 import Install from './install/Install';
-import Paper from '@mui/material/Paper';
 import './styles.css';
 
 const Benefits = lazy(() => import('./benefits/Benefits'));
@@ -44,41 +43,17 @@ const Home = ({ isMobile }) => {
           </h3>
         </>
         <Suspense fallback={<Loading />}>
-          <Paper
-            elevation={24}
-            square={false}
-            sx={paperOptions}
-          >
-            <Benefits isMobile={isMobile} />
-          </Paper>
-          <Paper
-            elevation={24}
-            square={false}
-            sx={paperOptions}
-          >
-            <Showcase isMobile={isMobile} />
-          </Paper>
-          <Paper
-            elevation={24}
-            square={false}
-            sx={paperOptions}
-          >
-            <ProductBenefits isMobile={isMobile} />
-          </Paper>
-          <Paper
-            elevation={24}
-            square={false}
-            sx={paperOptions}
-          >
-            <Install isMobile={isMobile} />
-          </Paper>
-          <Paper
-            elevation={24}
-            square={false}
-            sx={paperOptions}
-          >
-            <Consultation isMobile={isMobile} />
-          </Paper>
+
+          <Benefits isMobile={isMobile} />
+
+          <Showcase isMobile={isMobile} />
+
+          <ProductBenefits isMobile={isMobile} />
+
+          <Install isMobile={isMobile} />
+
+          <Consultation isMobile={isMobile} />
+
         </Suspense>
       </main>
     </>
