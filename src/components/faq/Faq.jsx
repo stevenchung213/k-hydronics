@@ -20,28 +20,32 @@ const Faqs = () => {
 
   const questions = [
     {
+      text: 'Do homeowners need to prep anything?',
+      answer: ['Installation can only take place once the subfloor is completely exposed and all furnishings have been removed from desired heated areas.']
+    },
+    {
       text: 'How long does installation take?',
-      answer: ['Our team of experts can complete a conventional sized window in approximately 15 minutes.', <br key={6} />, 'If a customer has five windows that need treatment, we can estimate the total duration to take roughly 75 minutes.']
+      answer: ['Team of 4 can complete roughly 500 sq ft per day.', <br key={6} />, 'A 1500 sq ft would take 3 days.']
     },
     {
       text: 'What happens if there is a leak?',
-      answer: ['We collect half of the total cost as a deposit during your in-home consultation and the remainder is collected once your window treatment is installed.', <br key={4} />, 'We apologize but we currently do not accept electronic payments.']
+      answer: ''
     },
     {
       text: 'Does the floor heating system require any maintenance?',
-      answer: ['Our window treatments usually take 2 weeks to arrive at our facilities from South Korea.', <br key={5} />, 'Therefore, installation can only be scheduled two weeks after your order has been placed.']
+      answer: ''
     },
     {
       text: 'Does the floor heating system come with a warranty?',
-      answer: ['The in-home consultation is designed to provide a more personal customer experience where one of our experts directly visits your property to help you decide on a window treatment and take measurements.', <br key={1} />, '1.  They will provide a full physical catalog which includes fabric samples along with all the styles and colors to help you choose.', <br key={2} />, '2. They will take precise measurements for each window that you plan on treating.', <br key={3} />, 'The entire process, on average (3bed home), takes about an hour but can take longer if unusual circumstances are present.']
+      answer: ''
     },
     {
       text: 'Can I use my existing water heater for a hydronic system?',
-      answer: [`Standard domestic water heaters are not engineered for the continuous operation demands of space heating. You will need a dedicated boiler, combi boiler, or geothermal heat pump.`]
+      answer: `Standard domestic water heaters are not engineered for the continuous operation demands of space heating. You will need a dedicated boiler, combi boiler, or geothermal heat pump.`
     },
     {
       text: 'Is the floor heating system transferable to a new home?',
-      answer: [`Due to our floor heating system's modular/dry design, it is absolutely possible to move your floor heating system to a new home.`]
+      answer: `Due to our floor heating system's modular/dry design, it is absolutely possible to move your floor heating system to a new home.`
     },
   ];
 
