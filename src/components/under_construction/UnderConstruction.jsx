@@ -6,13 +6,13 @@ import './styles.css';
 const UnderConstruction = () => {
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const timeoutId = setTimeout(() => {
-  //     navigate('/');
-  //   }, 3000);
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      navigate('/');
+    }, 3000);
 
-  //   return () => clearTimeout(timeoutId);
-  // }, [navigate]);
+    return () => clearTimeout(timeoutId);
+  }, [navigate]);
 
   return (
     <div id='under_construction_container'>
