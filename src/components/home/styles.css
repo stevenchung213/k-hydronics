@@ -106,7 +106,8 @@
   .cover_photo {
     width: 100%;
     max-width: 100%;
-    background-image: url('./../../assets/home2_bg_mobile.webp');
+    background-image: url('./../../assets/living_room_bg.webp');
+    /* background-image: url('./../../assets/home2_bg_mobile.webp'); */
     background-size: fit;
     height: auto;
   }
