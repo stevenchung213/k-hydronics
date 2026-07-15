@@ -3,6 +3,8 @@ import './styles.css';
 
 const TimelineItemContainer = ({ isMobile, data }) => {
   const { img, text, even } = data;
+  const textArr = text.split('(');
+  const finalText = isMobile ? textArr.slice(0, textArr.length - 1).join('(').trim() + '.' : text;
 
   return (
     <div className='timeline_item_container'>
@@ -15,7 +17,7 @@ const TimelineItemContainer = ({ isMobile, data }) => {
               </div>
               <div className='timeline_text_container'>
                 <div className='timeline_text'>
-                  {text.split('(')[0].trim() + '.'}
+                  {finalText}
                 </div>
               </div>
             </>

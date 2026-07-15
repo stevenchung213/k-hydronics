@@ -9,7 +9,7 @@
 }
 
 .timeline_photo {
-  width: 75%;
+  width: 50%;
   border-radius: 1rem;
   margin-top: 2rem;
 }
@@ -25,7 +25,7 @@
 }
 
 .timeline_text_container {
-  width: 80%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
