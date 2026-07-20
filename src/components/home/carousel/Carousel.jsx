@@ -23,7 +23,7 @@ const slides = [
   },
   {
     src: panel_design,
-    text: `Crafted from a high-performance natural carbon composite, these panels deliver rapid, even heat distribution with noticeable increased heat retention than competitors, leveraging cutting edge thermal technology to lower utility bills without compromising on your comfort.`
+    text: `Crafted from a high-performance natural carbon composite, these panels deliver rapid, even heat distribution with noticeably increased heat retention than competitors, leveraging cutting edge thermal technology to lower utility bills without compromising on your comfort.`
   },
   {
     src: panel_config,

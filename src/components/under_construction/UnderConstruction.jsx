@@ -21,7 +21,6 @@ const UnderConstruction = () => {
         <img src={underConstruction} id='under_construction_icon' alt='under_construction' />
       </div>
       <div>Sorry! This portion of our site is currently under construction.</div>
-      <div>Please check back in 2 weeks!</div>
       <div>Redirecting in 3 seconds...</div>
     </div>
   );

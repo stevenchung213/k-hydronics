@@ -167,10 +167,13 @@
   }
 
   .form_container {
+    display: flex;
+    flex-direction: column;
     padding: 1rem 3rem;
     box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     margin-top: 0.5rem;
+    width: 95%;
   }
 
   .form {
@@ -180,19 +183,16 @@
     justify-content: space-evenly;
   }
 
-  #contact_message {
-    color: rgb(71, 65, 56);
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    padding: 0 1.5rem;
-    line-height: 1.5rem;
+  #response_container {
+    padding: 2rem;
   }
 
-  #contact_message span {
-    font-size: 1rem;
-    line-height: 1.2rem;
-    margin-top: 0.5rem;
+  .gratitude_message {
+    text-align: center;
+  }
+
+  .response_message {
+    margin-top: 1rem;
   }
 }
 
