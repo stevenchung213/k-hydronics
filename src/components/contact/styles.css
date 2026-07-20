@@ -119,11 +119,11 @@
   color: rgb(71, 65, 56);
   font-size: 1rem;
   font-weight: 300;
-  /* align-items: center; */
 }
 
 .gratitude_message {
   font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
 .response_message {
@@ -134,7 +134,7 @@
 
 .faq_message {
   font-size: 1.05rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .faq_link {
