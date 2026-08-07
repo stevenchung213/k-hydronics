@@ -1,13 +1,14 @@
 import React, { lazy, Suspense } from 'react';
 import SEO from './../shared/SEO/SEO';
 import Loading from './../shared/Loading/Loading';
-import Install from './install/Install';
 import './styles.css';
 
 const Benefits = lazy(() => import('./benefits/Benefits'));
-const ProductBenefits = lazy(() => import('./product_benefits/ProductBenefits'));
-const Consultation = lazy(() => import('./consultation/Consultation'));
 const Showcase = lazy(() => import('./showcase/Showcase'));
+const ProductBenefits = lazy(() => import('./product_benefits/ProductBenefits'));
+const Commercial = lazy(() => import('./commercial/Commercial'));
+const Install = lazy(() => import('./install/Install'));
+const Consultation = lazy(() => import('./consultation/Consultation'));
 
 const companyName = 'K-hydronics';
 const companyDomain = 'k-hydronics';
@@ -39,7 +40,10 @@ const Home = ({ isMobile }) => {
           <Benefits isMobile={isMobile} />
           <Showcase isMobile={isMobile} />
           <ProductBenefits isMobile={isMobile} />
-          <Install isMobile={isMobile} />
+          <Commercial isMobile={isMobile} />
+
+          {/* <Install isMobile={isMobile} /> */}
+
           <Consultation isMobile={isMobile} />
         </Suspense>
       </main>
