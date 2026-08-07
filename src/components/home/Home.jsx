@@ -30,12 +30,14 @@ const Home = ({ isMobile }) => {
         canonicalUrl={`https://www.${companyDomain}.com`}
       />
       <main id='home_container'>
-        <div className='cover_photo' alt='cover_photo' />
-        <h3 className='subheader'>
-          <div>
-            Ancient Korean Tradition Meets Modern Technology
-          </div>
-        </h3>
+        <div className='cover_photo' alt='cover_photo'>
+          <h3 id='slogan' className='subheader'>
+            <div>
+              Ancient Korean Tradition Meets Modern Technology
+            </div>
+          </h3>
+        </div>
+
         <Suspense fallback={<Loading />}>
           <Benefits isMobile={isMobile} />
           <Showcase isMobile={isMobile} />

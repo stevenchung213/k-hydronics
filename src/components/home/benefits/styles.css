@@ -28,8 +28,8 @@
 
 @media only screen and (max-width: 768px) {
   .benefits_showcase_container {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .benefits_showcase_banner {
@@ -44,15 +44,5 @@
     margin-top: 1rem;
     width: 85%;
   }
-
-}
-
-@media only screen and (max-width: 380px) {
-
-  #benefits_showcase_container {}
-
-  #benefits_showcase_banner {}
-
-  #floor_heating_diagram {}
 
 }

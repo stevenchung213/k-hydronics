@@ -12,7 +12,6 @@ const Footer = ({ isMobile }) => {
       section: 'Customer Support',
       links: [
         { text: isMobile ? 'FAQs' : 'Frequently Asked Questions', link: 'faqs' },
-        // { text: isMobile ? 'Commercial' : 'Commercial Inquiries', link: 'commercial' }
       ]
     },
     {
