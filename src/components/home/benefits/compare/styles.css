@@ -18,8 +18,6 @@
   margin: auto;
 }
 
-#_r_4_ {}
-
 .column_feature {
   height: 4.5rem;
   display: flex;
@@ -71,11 +69,11 @@
 
   .column_feature {
     height: 4.5rem;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .rdt_columnText {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .check_mark {
