@@ -6,7 +6,7 @@ import './styles.css';
 
 const Showcase = ({ isMobile }) => {
 
-  const carouselOptions = { align: 'start', loop: true, axis: 'y' };
+  const carouselOptions = { align: 'start', loop: true, axis: isMobile ? 'x' : 'y' };
 
   return (
     <div id='showcase_container'>

@@ -161,6 +161,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+  .embla__container {
+    flex-direction: row;
+  }
+
   .embla__slide__container {
     width: 100%;
     display: flex;

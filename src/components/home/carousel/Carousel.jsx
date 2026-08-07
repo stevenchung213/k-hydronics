@@ -52,7 +52,7 @@ const Carousel = ({ options, delayTime, isMobile }) => {
 
   const { onAutoplayButtonClick } =
     useAutoplay(emblaApi);
-
+  console.log(slides, isMobile)
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
